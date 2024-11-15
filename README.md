@@ -1,14 +1,14 @@
 # DroneDeploy App by jatwitmyer
 
 ## Instructions:
-### Start the Server
+### 1. Start the Server
 *Note: You must have python3 installed*
 **Commands:**
 - pip install pipenv && python3 -m venv .venv && pipenv shell
 - pipenv install
 - cd server && python app.py
 
-### Start the Frontend
+### 2. Start the Frontend
 *Note: You must have npm installed*
 **Commands (in a new terminal):**
 - npm install && npm start
