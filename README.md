@@ -1,8 +1,17 @@
 # DroneDeploy App by jatwitmyer
 
 ## Instructions:
-cd server && python3 -m venv .venv && pip install flask && pip install flask_cors && python app.py
-npm install && npm start
+### Start the Server
+*Note: You must have python3 installed*
+**Commands:**
+- pip install pipenv && python3 -m venv .venv && pipenv shell
+- pipenv install
+- cd server && python app.py
+
+### Start the Frontend
+*Note: You must have npm installed*
+**Commands (in a new terminal):**
+- npm install && npm start
 
 ## Features:
 ### Responsive UI

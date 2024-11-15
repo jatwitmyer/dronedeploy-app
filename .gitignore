@@ -26,3 +26,4 @@ yarn-error.log*
 .venv
 package-lock.json
 server/__pychahe__
+Pipfile.lock
