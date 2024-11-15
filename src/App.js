@@ -12,8 +12,8 @@ function App() {
     setChatIsVisible(true)
   }
   //featured image overlay
-  const [featuredImage, setFeaturedImage] = useState({'src':`${process.env.PUBLIC_URL}/gallery_images/YNP_001.jpg`, 'alt':''})
-  const [featuredImageIsVisible, setFeaturedImageIsVisible] = useState(true)
+  const [featuredImage, setFeaturedImage] = useState({'src':'', 'alt':''})
+  const [featuredImageIsVisible, setFeaturedImageIsVisible] = useState(false)
 
   //preload images separately from data fetch for UI responsiveness for slow connections
   const galleryImages = ["YNP_001.jpg", "YNP_002.jpg", "YNP_003.jpg", "YNP_004.jpg", "YNP_005.jpg"];
