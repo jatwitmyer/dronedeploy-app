@@ -1,0 +1,70 @@
+#chatbot {
+  height: 70px;
+  margin: 10px;
+}
+
+#chatbot:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#chatbot-overlay {
+  position: fixed;
+  top: 30px;
+  left: 90px;
+  height: fit-content;
+  max-height: 90vh;
+  width: 500px;
+  background-color: white;
+  border-radius: 10px;
+  border: 2.5px grey solid;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  padding: 20px;
+}
+
+.hide-overlay {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+#prompt {
+  font-size: 30px;
+  overflow-wrap: break-word;
+}
+
+#chatbot-overlay input {
+  font-size: 18px;
+  padding: 5px;
+}
+
+#searchbar {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr auto;
+  margin: 0;
+}
+
+#message-history p{
+  font-size: 20px;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.query {
+  background-color: lightgray;
+  float: right;
+}
+
+.response {
+  background-color: lightblue;
+  float: left;
+}

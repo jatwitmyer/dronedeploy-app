@@ -1,0 +1,34 @@
+#image-overlay {
+  cursor: pointer;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  color: white;
+  background: rgba(63, 63, 63, 0.8);
+  z-index: 1000;
+  width: 100%;
+  height: 100vh;
+}
+
+#image-overlay img {
+  cursor: auto;
+  width: 60%;
+  height: auto;
+  opacity: 100%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+}
+
+#hide-featured-image {
+  right: 40px;
+  top: 40px;
+}
+
+@media screen and (max-width: 1600px) {
+  #image-overlay img {
+    width: 90%;
+  }
+}

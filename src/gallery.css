@@ -1,0 +1,79 @@
+/* container */
+#Gallery {
+  margin-top: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px;
+}
+
+/* Gallery cards */
+#Gallery div {
+  height: 41vh;
+  flex: 1 1 0;
+
+  display: flex;
+  max-width: calc(50vw - 32px);
+}
+
+/* image side */
+#Gallery img {
+  height: 41vh;
+  object-fit: cover;
+  width: calc(50vw - 315px)
+}
+
+#Gallery img:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  cursor: pointer;
+}
+
+/* data side */
+#Gallery div div {
+  overflow: auto;
+  flex-wrap: wrap;
+  padding: 0 15px;
+  width: 300px;
+}
+
+#Gallery h4 {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+#Gallery ul {
+  padding-left: 20px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+/* end of data side */
+
+
+/* On screens that are 992px wide or less, go from two columns to one */
+@media screen and (max-width: 992px) {
+  #Gallery {
+    flex-direction: column;
+  }
+  #Gallery img {
+    width: calc(100vw - 315px);
+  }
+  #Gallery div {
+    max-width: calc(100vw - 50px);
+  }
+}
+
+/* On screens that are 600px wide or less, make the details display below the images*/
+@media screen and (max-width: 600px) {
+  #Gallery div {
+    flex-direction: column;
+  }
+  #Gallery img {
+    width: calc(100vw - 50px);
+  }
+  #Gallery div div {
+    padding-top: 15px;
+    flex-direction: row;
+  }
+}

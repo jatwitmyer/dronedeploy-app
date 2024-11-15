@@ -1,0 +1,13 @@
+h1 {
+  position: fixed;
+  left: 50%;
+  top: 21.440px; /*default h1 margin-top*/
+  transform: translate(-50%, -50%);
+}
+
+header {
+  display: flex;
+  position: fixed;
+  background-color: white;
+  width: calc(100vw - 16px); /* screen width minus scroll bar width */
+}
